@@ -143,6 +143,13 @@ void vendor_load_properties()
         property_set("ro.build.description", "jfltezm-user 4.2.2 JDQ39 I9508ZMUAMG1 release-keys");
         property_set("ro.product.model", "GT-I9508");
         property_set("ro.product.device", "jfltezm");
+    } else if (strstr(bootloader, "I9295")) {
+        /* jactivelte */
+        gsm_properties();
+        property_set("ro.build.fingerprint", "samsung/jactiveltexx/jactivelte:4.4.2/KOT49H/I9295XXUCNF1:user/release-keys");
+        property_set("ro.build.description", "jactiveltexx-user 4.4.2 KOT49H I9295XXUCNF1 release-keys");
+        property_set("ro.product.model", "GT-I9295");
+        property_set("ro.product.device", "jactivelte");
     }
 
     property_get("ro.product.device", device);
